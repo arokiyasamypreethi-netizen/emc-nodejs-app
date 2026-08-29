@@ -14,13 +14,13 @@ pipeline {
     }
     stage('Build Docker Image') {
       steps {
-        bat "docker build -t %IMAGE_NAME% ."
+        bat '"C:\\Users\\hp\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t %IMAGE_NAME% .'
       }
     }
 
     stage('Show Docker Images') {
       steps {
-        bat "docker images"
+        bat  '"C:\\Users\\hp\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" images'
       }
     }
   }
