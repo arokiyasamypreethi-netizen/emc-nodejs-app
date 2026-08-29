@@ -3,6 +3,7 @@ pipeline {
 
   environment {
     IMAGE_NAME = 'emc-nodejs-app:latest'
+     DOCKER_HOST = 'tcp://localhost:2375'
   }
 
   stages {
